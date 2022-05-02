@@ -1,0 +1,107 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightcyan;
+}
+
+.navlist{
+   list-style: none;
+height:45px;
+font-family: sans-serif;
+font-size: 20px;
+font-weight: 500;
+
+}
+
+.navlist li{
+    display: inline-block;
+    list-style: none;
+    margin-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+   
+}
+.navlist li a {
+    text-decoration: none;
+    color: black;
+    padding:6px 13px;
+   
+}
+.navlist li a:hover{
+    border:2px solid orange;
+    background-color:orange ;
+   
+}
+.background{
+    background: url(/latop.jpg);
+    background-size: cover;
+    height:90vh;
+    width: 100vw;
+}
+
+
+footer{
+    display: flex;
+    background-color: pink;
+    height:4rem;
+    margin-bottom: 0%;
+    padding-bottom:0 ;
+}
+footer .link1{
+    padding-top: 20px;
+    padding-left: 10px;
+    font-family: sans-serif;
+    
+}
+.link1 a{
+    color:purple;
+    font-size: 15.2px;
+    
+}
+.link1 .center{
+    text-align: center;
+   
+}
+.margins1{
+    margin-left: 20%;
+    margin-right: 20px;
+}
+.box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:535px;
+    height:190px;
+    background: rgba(0,0,0,.5);
+    border-radius: 35px;
+}
+.para1{
+    margin-top: 9%;
+    font-family: sans-serif;
+    padding-left: 10px;
+    color:white;
+    word-spacing: 5px;
+    font-size: 1.2rem;
+}
+.para2{
+    font-family: sans-serif;
+    padding-left: 10px;
+    color:white;
+    word-spacing: 5px;
+    font-size: 1.2rem; 
+    margin-left: 20%;
+}
+.line1{
+    height:1px;
+    width:200px;
+    border: dashed white;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 10px;
+} 
+
+

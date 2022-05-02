@@ -1,0 +1,29 @@
+
+  /* body  */
+  .big{
+    font-size: 80px;
+    font-weight: normal;
+    font-family:cursive ;
+  }
+.content-body{
+  height: 400px;
+ /* background-color: rgb(44, 42, 42, 0.5); */
+}
+.content{
+  
+  /* border: 2px solid white; */
+  margin: 60px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+
+}
+.together{
+color: white;
+ font-size: 30px;
+ font-family: cursive;  
+}
+img{
+  width: 500px;
+  height: 250px;
+  margin: 30px 0px 0px 80px;
+}
+
