@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 <style>
 body 
@@ -34,7 +34,7 @@ background-position:fixed;
   
   }
  .web{
-    color: brown;
+    color: red;
       font-size: 80px;
  }
 
@@ -60,7 +60,7 @@ background-position:fixed;
    margin-left: 100px;
  }
 .nav a:hover {
-  color: brown;
+  color: red;
   /* background-color: skyblue; */
   font-weight: bold;
   text-align: center;
@@ -152,8 +152,8 @@ b{
 
       <!-- navigation -->
           <div class="col-md-7 ml-auto  nav align-self-center">
-              <a class="home" href="home.php">Home</a>
-              <a  href="">REGISTERED NGOs</a>
+              <a class="home" href="HOME/home.php">Home</a>
+              <a  href="">REGESTERED NGOs</a>
               <a href="my-donation.php">DONATE</a>
                <a href="#">MY DONATION</a>
               <a href="#">LOGOUT</a>
@@ -167,7 +167,7 @@ b{
                <h2 class="sh"> TOGETHER TO HELP THE WORLD BETTER.... </h2>
             </div>
 
-            <!-- quote -->
+          
             
      </div>
 </body>

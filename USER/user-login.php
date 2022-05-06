@@ -106,7 +106,7 @@
             <button type="submit" class="btn btn-primary btn-lg">Login</button>
         </div>
     </form>
-	<div class="hint-text">New User? <a href="index.php">Signup here</a></div>
+	<div class="hint-text">New User? <a href="user-signup.php">Signup here</a></div>
 </div>
 
 <?php

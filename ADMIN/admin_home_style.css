@@ -7,90 +7,16 @@
 body{
     width:100%;
     height:100vh;
-    background: url(admin_bg.jpg);
+    /* background: url(admin_bg.jpg); */
     background-size: cover;
     background-position: center;
    
 }
-nav{
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 60px;
-    padding: 10px 15px;
-    /* background: rgba(0, 0,0, 0.6); */
-    
-}
-nav ul{
-    display: flex;
-    list-style: none;
-    margin: 0%;
-    list-style: none;
-    padding: 0%;
-}
-nav ul li a{
-    line-height: 40px;
-    color:black;
-    padding: 12px 30px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bolder;
-    text-transform: uppercase;
-}
-nav ul li a:hover{
-    background:rgba(0, 0,0, 0.9 );
-    border-radius: 6px;
-    color:white;
-    font-size: 15px;
-}
-.start{
-    position: relative;
-   
-}
-.container{
-    width:30vw;
-    height:35vh;
-    background: rgba(0, 0,0, 0.9);
-    position:absolute;
-    left:50%;
-    margin-top:20%;
-    transform: translate(-50%,-50%);
-    border-radius: 15px;
 
-}
-.para1{
-    margin-top: 15px;
-    padding:15px;
-    color:white;
-    font-size: 17px;
-    
-}
-.mainlogo{
-     display: flex;
-   border-radius: 50px;
-   background-color: plum;
-   height: 100px;
-    width: 300px;
-    margin-left:50px ;
-    padding-top: 15px;
-}
-.mini{
-    display: flex;
-   
-}
 
-.logo{
-    width:30%;
-   padding-left:10px ;
-   margin-top: -5px;
-   
-}
-.logo img{
-    width:100%;
-    border-radius: 50px;
-    border:2px solid white;
-}
+
+
+
  .foot{
     position: relative;
 } 

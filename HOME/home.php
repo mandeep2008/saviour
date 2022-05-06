@@ -30,9 +30,10 @@
           <div class="col-md-8 ml-auto  nav align-self-center">
               <a class="home" href="home.php">HOME</a>
               <a href="about-us.php">ABOUT US</a>
-               <a href="ADMIN/admin_home.php">ADMIN</a>
+              <a href="request_form.php">REQUEST</a>
+               <a href="ADMIN//admin_home.php">ADMIN</a>
               <a href="USER/user-login.php">USER</a>
-              <a href="/NGO/ngolog.php"> NGO</a>
+              <a href="NGO/ngolog.php"> NGO</a>
              </div>
         </div>
 

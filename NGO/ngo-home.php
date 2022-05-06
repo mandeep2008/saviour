@@ -16,10 +16,10 @@
                 <p class="web-name"><b class="web">$</b>aviour</p>
             </div>
             <div class="col-md-6 nav align-self-center">
-                    <a class="home" href="HOME/home.php">Home</a>
-                    <a class="donation" href="donation-list.php">Donation List</a>
-                    <a class="assign" href="assign-executive.php">Assign Executive</a>
-                    <a href="">Log Out</a>
+                    <a class="home" href="HOME/home.php">HOME</a>
+                    <a class="donation" href="donation-list.php">DONATION LIST</a>
+                    <a class="assign" href="assign-executive.php">ASSIGN EXECUTIVE</a>
+                    <a href="">LOGOUT</a>
             </div>
         </div>
 

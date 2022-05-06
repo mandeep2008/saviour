@@ -5,51 +5,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online unused medicine donation system. Prabh</title>
-    <link rel="stylesheet" href="admin_home_style.css">
+    <title>Online unused medicine donation system.</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="admin_home_style.css"> -->
+    <link rel="stylesheet" href="admin.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="home.php">Home</a></li>
-            <li><a href="about-us.php">About</a></li>
-            <li><a href="requst.php">Request</a></li>
-            <li><a href="#">User</a></li>
-            <li><a href="#">NGO</a></li>
-        </ul>
-    </nav>
-    <section class="start">
-        <div class="container">
-            <p class="para1">"The measure of life is not its duration ,but
-                its<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;donation"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome
-                to Donation Community </p>
+<div class="container-fluid">
+        <div class="row layout">
+            <div class="col-md-2 logo">
+                <p class="web-name"><b class="web">$</b>aviour</p>
+            </div>
+            <div class="col-md-10 nav align-self-center">
+                    <a class="home" href="HOME/home.php">HOME</a>
+                    <a class="donation" href="">ADD NGO</a>
+                    <a class="assign" href="">ADD EXECUTIVE</a>
+                    <a class="assign" href="">VIEW DONATOR DETAILS</a>
+                    <a class="assign" href="">VIEW NGO DETAILS</a>
+                    <a class="assign" href="">VIEW REQUSETED MEDICINES </a>
+                    <a href="">LOGOUT</a>
+            </div>
+</div>
+</div>
 
-            <div class="mainlogo">
-                <div class="mini">
-                    <div class="logo"><img src="/pictures/love.jpg" alt="" srcset=""></div>
-                    <div class="main">
-                        <h1>OUMDS</h1>
-                        <p>Online Unused Medicine</p>
-                        <h4>Donation System</h4>
+<!-- body  -->
+<div class= "row box justify-content-center">
+    <div class="col-md-4 box-col ">
+      <div class="col-md-12 para1">
+        <p>"The measure of life is not its duration ,but its &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;donation"</p>
+      </div>
+      <div class="col-md-12 para1">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to Donation Community</p>
+      </div>
+        <div class="col-md-12 mainlogo">
+            <div class="row">
+                 <div class="col-md-4 logo"><img src="love.jpg" alt="" srcset=""></div>
+                    <div class=" col-md-6 main">
+                        <p class="Saviour">Saviour</p>
+                        <p class= "oumds">Online Unused Medicine Donation<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <footer class="foot">
-        <div class="starten">
-            <p class="left"><a href="faq.php">FAQ</a></p>
-            <p class="right"><a href="#">Feedback</a></p>
-            <div class="center">
-                NGO's willing to register... <a href="#">Click Here</a>
-            </div>
-            <aside>
-                NGO's can contact the portal at <a href="#">oumdsp@gmail.com</a>
-            </aside>
+    </div>
+    </div>
+   <!-- footer  -->
+   <div class="row F justify-content-center">
+          <div class="col-md-3 first-col">
+           <pre><a href="faq.php">FAQ</a>        
+<a href="">Feedback</a>
+           </pre>
+          </div>
+          <div class="col-md-5 feedback">
+            <p class="register">NGO can register by <a href="ngo-signup.php">clicking here</a></p>
+            <p class="register">User can register by <a href="user-signup.php">clicking here</a></p>
+          </div>
+         
+          <div class="col-md-4 contact"> 
+           
+            <pre class="register">Email:<a href="mailto:Saviour1234@gmail.com?Subject: "> Saviour1234@gamil.com</a></pre>
+          </div>
+       
         </div>
-    </footer>
+       
+    </div>
+
 </body>
 
 </html>
