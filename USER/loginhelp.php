@@ -8,7 +8,7 @@
         $pass = stripcslashes($pass);  
         $email = mysqli_real_escape_string($conn, $email);  
         $password = mysqli_real_escape_string($conn, $pass);  
-        $sql = 'SELECT * FROM `p1` WHERE PASSWORD = "'.$pass.'" and EMAIL ="'.$email.'"'; 
+        $sql = 'SELECT * FROM `USERS` WHERE PASSWORD = "'.$pass.'" and EMAIL ="'.$email.'"'; 
         $result = mysqli_query($conn, $sql);  
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
         $count = mysqli_num_rows($result);  

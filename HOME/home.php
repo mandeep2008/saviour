@@ -1,12 +1,16 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Cache-control" content="no-cache">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>....</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="./home.css">
   
 
       <!-- google fonts -->
@@ -15,8 +19,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  
   <div class="container-fluid">
       <div class="row navigation">
 
@@ -30,10 +34,10 @@
           <div class="col-md-8 ml-auto  nav align-self-center">
               <a class="home" href="home.php">HOME</a>
               <a href="about-us.php">ABOUT US</a>
-              <a href="request_form.php">REQUEST</a>
-               <a href="ADMIN//admin_home.php">ADMIN</a>
-              <a href="USER/user-login.php">USER</a>
-              <a href="NGO/ngolog.php"> NGO</a>
+              <!-- <a href = "request_form.php">REQUEST</a> -->
+               <a href="../ADMIN/admin_home.php">ADMIN</a>
+              <a href="../USER/user-login.php">USER</a>
+              <a href="../NGO/ngolog.php"> NGO</a>
              </div>
         </div>
 
@@ -56,7 +60,7 @@
         <div class="row F justify-content-center">
           <div class="col-md-3 first-col">
            <pre><a href="faq.php">FAQ</a>        
-<a href="">Feedback</a>
+            <a href="">Feedback</a>
            </pre>
           </div>
           <div class="col-md-5 feedback">
