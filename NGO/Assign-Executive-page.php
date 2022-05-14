@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assign-Executive-Page-style.css">
     <link rel="stylesheet" href="ngo-style.css">
-    <link rel="stylesheet" href="Donated-Medicine-style.css">
 </head>
 <body>
-<div class="container-fluid">
+ <div class="container-fluid">
     <div class="row layout">
         <div class="col-md-6 logo">
             <p class="web-name"><b class="web">$</b>aviour</p>
@@ -22,66 +22,50 @@
                 <a href="">LOGOUT</a>
         </div>
     </div>
-    <h1>Donated Medicines</h1>
-    <table>
+       <table>
         <tr>
           <th>ID</th>
-          <th>Donator's Name</th>
-          <th>Donator's Email-id</th>
-          <th>Donator's Address</th>
-          <th>Medicine Brand Name</th>
-          <th>Medicine Generic Name</th>
-          <th>Quantity</th>
-          <th>Expiry Date</th>
-          <th>Medicine Type</th>
-          <th>Donation Type</th>
-          <th>NGO(Your) Email-id</th>
-        </tr>
-        <tr>
-          <td>44</td>
-          <td>abc</td>
-          <td>abc@gmail.com</td>
-          <td>wara bhaika, fraidkot</td>
-          <td>crocin</td>
-          <td>cro123</td>
-          <td>50</td>
-          <td>10-2023</td>
-          <td>Tablet</td>
-          <td>NGO</td>
-          <td>ngo@gmail.com</td>
-        
+          <th>Executive Name</th>
+          <th>Email-id</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Address</th>
+          <th>Contact</th>
+          <th>Assign Executive</th>
         </tr>
         <tr>
             <td>44</td>
             <td>abc</td>
             <td>abc@gmail.com</td>
+            <td>20</td>
+            <td>female</td>
             <td>wara bhaika, fraidkot</td>
-            <td>crocin</td>
-            <td>cro123</td>
-            <td>50</td>
-            <td>10-2023</td>
-            <td>Tablet</td>
-            <td>NGO</td>
-            <td>ngo@gmail.com</td>
-          
+            <td>9877285035</td>
+            <td><button>Assign</button></td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>abc</td>
+            <td>abc@gmail.com</td>
+            <td>20</td>
+            <td>female</td>
+            <td>wara bhaika, fraidkot</td>
+            <td>9877285035</td>
+            <td><button>Assign</button></td>
+           
           </tr>
           <tr>
             <td>44</td>
             <td>abc</td>
             <td>abc@gmail.com</td>
+            <td>20</td>
+            <td>female</td>
             <td>wara bhaika, fraidkot</td>
-            <td>crocin</td>
-            <td>cro123</td>
-            <td>50</td>
-            <td>10-2023</td>
-            <td>Tablet</td>
-            <td>NGO</td>
-            <td>ngo@gmail.com</td>
-          
+            <td>9877285035</td>
+            <td><button>Assign</button></td>
           </tr>
       </table>
-
-      <div class="row F justify-content-center">
+    <div class="row F justify-content-center">
         <div class="col-md-3 first-col">
          <pre><a href="faq.php">FAQ</a>        
 <a href="">Feedback</a>
@@ -99,6 +83,6 @@
     </div>
      
  </div>
-      
+     
 </body>
 </html>
