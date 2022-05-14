@@ -167,9 +167,9 @@ b{
           <div class="col-md-7 ml-auto  nav align-self-center">
               
           <a class="home" href="../HOME/home.php">Home</a>
-              <a  href="">REGESTERED NGOs</a>
-              <a href="my-donation.php">DONATE</a>
-               <a href="#">MY DONATION</a>
+        
+              <a href="donate.php">DONATE</a>
+               <a href="my-donation.php">MY DONATION</a>
                
               <a href="user-login-successful.php?logout=true">LOGOUT</a>
               

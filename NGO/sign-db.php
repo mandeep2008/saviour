@@ -23,10 +23,10 @@ $conn = dbConnect();
 $result = mysqli_query ($conn, $data);
 
 if($result)
-    echo 'succesful';
+    {echo 'succesful';
+    header('location:ngo-home.php');}
 else
     echo 'failed';
- header('location:ngo-home.php');
 // CloseCon($conn);
 
 ?>

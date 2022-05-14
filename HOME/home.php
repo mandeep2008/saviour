@@ -44,9 +44,12 @@
                   
                 else 
                   echo '<a href="../USER/user-login.php">USER</a>';
-                  
+                if(isset($_SESSION['ngoStatus']) && $_SESSION['ngoStatus'] == 'logged_in')
+                  echo '<a href="../NGO/ngo-home.php">NGO</a>';
+                else 
+                  echo '<a href="../NGO/ngolog.php">NGO</a>';
                ?>
-              <a href="../NGO/ngolog.php"> NGO</a>
+              
              </div>
         </div>
 
