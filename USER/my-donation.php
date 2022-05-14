@@ -45,7 +45,6 @@ border:1px solid #ddd;
 border-radius:3px;
 outline: 0;
 padding:7px;
-/* color:blue; */
 background-color:white;
 box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
 }
