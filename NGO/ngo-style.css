@@ -1,11 +1,11 @@
-body{
+/* body{
     background-image: url(bg13.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     /* background-color: lightblue; */
-}
+} */
 
 .layout{
   /* background-color:rgb(41, 38, 38,0.5) ; */
@@ -14,7 +14,8 @@ body{
   /* background-color: rgb(186, 207, 206); */
 }
 .web-name{
-    color: white;
+    /* color: white; */
+    color: black;
     font-size: 30px;
     font-weight: bold;
     font-style: italic;
@@ -32,11 +33,13 @@ body{
  .nav a{
     padding: 10px 20px;
     text-decoration: none;
-    color: white;
+    /* color: white; */
+    color: black;
   }
  .nav {
    display: inline-block;
-   color: white;
+   /* color: white; */
+   color: black;
    text-align: center;
    font-size: 17px;
    font-weight: bold;
@@ -58,7 +61,7 @@ body{
  background-color: rgb(228, 228, 228);
  }
  .first-col{
-   padding: 15px 15px 15px 80px;
+   padding: 5px 10px 5px 80px;
    font-size: 20px;
  }
  

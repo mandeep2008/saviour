@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mt-5 mb-5">
 
             <!-- form title  -->
             <div class="col-md-6 signup">
@@ -36,10 +36,28 @@
                             <label for="contact" class="txt">*Contact No:</label>
                             <input type="number" name="contact" placeholder="Enter ngo contact">
                             </div>
+                            <div class="col-md-6 left">
+                                <label for="year" class="txt">*Year of Establishment:</label>
+                                <input type="text" name="year" placeholder="Enter Year">
+                                </div>
+                                <div class="col-md-6 right">
+                                <label for="Authoritative" class="txt">*Name of the Authoritative Member:</label>
+                                <input type="text" name="Authoritative" placeholder="Enter Name">
+                                </div>
                               <div class="col-md-12">
                                   <label for="address" class="txt">*Address:</label>
                                   <textarea name="address" id="" cols="50" rows="5"></textarea>
                               </div>
+                              
+                              <div class="col=col-md-12 ">
+                                <label for="registration_certificate" class="txt file">*Add Registration Certificate of the NGO:</label>
+                                <input type="file" class="Certificate" id="myFile" name="filename">
+                              </div>
+                              <div class="col=col-md-12 ">
+                                <label for="finance" class="txt file">*Add Financial Statements of the NGO:</label>
+                                <input type="file" class="financial" id="myFile" name="filename">
+                              </div>
+                        
                               
                               
                         
