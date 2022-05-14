@@ -14,7 +14,9 @@ $exp=$_POST['exp'];
 
 $conn = dbConnect();
 
-$data = "INSERT INTO p2 (name,age,mobile,email,address,gender,med_name,med_brand,mfg_date,exp_date) VALUES ('$name','$age','$mobile','$email','$address','$gen','$medi_name','$medi_brand','$mfd','$exp')";
+$create = "CREATE TABLE IF NOT EXISTS DONATIONS "
+
+$data = "INSERT INTO DONATIONS (name,age,mobile,email,address,gender,med_name,med_brand,mfg_date,exp_date) VALUES ('$name','$age','$mobile','$email','$address','$gen','$medi_name','$medi_brand','$mfd','$exp')";
 $res = mysqli_query ($conn, $data);
 print_r($res);
 

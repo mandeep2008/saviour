@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <?php
+    if(session_status()!=2){
+      session_start();
+    }
+    function myFunction(){
+      $_SESSION['userid']=NULL;
+      $_SESSION['status'] = 'logged_out';
+      header('location:../HOME/home.php');
+    }
+    if(isset($_GET['logout'])){
+      myFunction();
+    }
+  ?>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -152,11 +165,14 @@ b{
 
       <!-- navigation -->
           <div class="col-md-7 ml-auto  nav align-self-center">
-              <a class="home" href="HOME/home.php">Home</a>
+              
+          <a class="home" href="../HOME/home.php">Home</a>
               <a  href="">REGESTERED NGOs</a>
               <a href="my-donation.php">DONATE</a>
                <a href="#">MY DONATION</a>
-              <a href="#">LOGOUT</a>
+               
+              <a href="user-login-successful.php?logout=true">LOGOUT</a>
+              
         </div>
 
           <!-- body of page -->

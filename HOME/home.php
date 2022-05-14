@@ -1,5 +1,7 @@
 <?php
-  session_start();
+  if(session_status()!=2)
+    session_start();
+  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,7 +38,14 @@
               <a href="about-us.php">ABOUT US</a>
               <!-- <a href = "request_form.php">REQUEST</a> -->
                <a href="../ADMIN/admin_home.php">ADMIN</a>
-              <a href="../USER/user-login.php">USER</a>
+               <?php
+                if(isset($_SESSION['status']) && $_SESSION['status'] == 'logged_in')
+                  echo '<a href="../USER/user-login-successful.php">USER</a>';
+                  
+                else 
+                  echo '<a href="../USER/user-login.php">USER</a>';
+                  
+               ?>
               <a href="../NGO/ngolog.php"> NGO</a>
              </div>
         </div>

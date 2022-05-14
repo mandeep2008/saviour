@@ -19,12 +19,12 @@ $create_result = mysqli_query($conn,$create);
 if($create_result){
 
     mysqli_query ($conn, $data);
-    if(session_status()==0){
+    if(session_status()!=2){
         session_start();
     }
-    $_SESSION['userId'] = mysqli_query("SELECT USER_ID FROM USERS WHERE EMAIL = '$email'");
+    $_SESSION['userId'] = mysqli_query($conn,"SELECT USER_ID FROM USERS WHERE EMAIL = '$email'")->FETCH_ARRAY()['USER_ID'];
     $_SESSION['status'] = 'logged_in';
-    // header('location:user-login-successful.php');
+    header('location:user-login-successful.php');
 }
 else{
     

@@ -5,7 +5,7 @@
 div.main
 {
 width:400px;
-margin: 100px auto 0px auto;
+margin: 100px auto 100px auto;
 color:black;
 border-radius:10px;
 	box-shadow:2px 2px 15px;
@@ -78,6 +78,17 @@ label,span,h1
 {
  text-shadow:1px 1px 5px rgba(0,0,0,0.3); 
 }
+select{
+	margin-left:40px;
+width:300px;
+border:1px solid #ddd;
+border-radius:3px;
+outline: 0;
+padding:7px;
+/* color:blue; */
+background-color:white;
+box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+}
 </style>
 </head>
 <body>
@@ -121,6 +132,26 @@ label,span,h1
 	&nbsp;
 	<span id="female"> Female </span>
 	&nbsp;&nbsp;&nbsp;&nbsp;
+	<br>
+	<br>
+	<label for="ngo">NGO Name:</label>
+	<br>
+	<select name="ngo" id="ngo">
+	<option value=''>Select ngo</option>
+	<?php
+		include 'dbconn.php';
+		$conn = dbConnect();
+
+		$query = "SELECT ngoname,ngoId from ngo";
+		$result = mysqli_query($conn,$query);
+		
+		foreach($result as $ngo){
+			echo "<option value = $ngo[ngoId]>$ngo[ngoname]</option>";
+		}
+	?>
+	
+  	
+	</select>
 	<br>
 	<br>
 	<label> Medicine Name : </label>
