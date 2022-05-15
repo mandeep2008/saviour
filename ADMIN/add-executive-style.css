@@ -1,0 +1,83 @@
+.nav .add-executive , .active {
+  color: rgb(255, 10, 10) ; 
+  
+}
+
+
+form{
+    border: 1px solid black;
+    margin: 30px auto 30px auto;
+    width: 550px;
+
+}
+
+.fname{
+    margin-left: 60px;
+}
+.age{
+    margin-left: 75px;
+}
+.contact{
+    margin-left: 30px;
+}
+.email{
+    margin-left: 100px;
+}
+.address{
+    margin-left: 80px;
+}
+
+.exe{
+    margin-left: 50px ;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+input#name
+{
+width:300px;
+border:1px solid #ddd;
+border-radius:3px;
+outline: 0;
+padding:7px;
+background-color:white;
+box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+}
+  label
+{
+    margin-left: 40px;
+font-family:sans-serif;
+color:black;
+
+}
+
+  .dt{
+    margin-left: 150px;
+    /* width: 400px; */
+  }
+  #maleRadio{
+      margin-left: 90px;
+  }
+  .btn-1, .btn-2{
+    margin-top: 25px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(24, 24, 24);
+   padding: 5px;
+    font-family: sans-serif;
+    font-size: 15   px;
+    color: white;
+  }
+  .btn-1{
+      width: 200px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+
+  }
+  .btn-2{
+      width: 100px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  

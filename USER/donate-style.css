@@ -1,0 +1,115 @@
+
+.nav .donate, .active {
+  color: rgb(255, 10, 10) ; 
+  
+}
+
+div.main {
+  width:50%;
+  overflow:hidden;
+ 
+}
+div.main {
+  position: relative;
+  animation: 5s slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+ 
+  }
+
+  to {
+    margin-left: 30%;
+    /* width: 100%; */
+  }
+}
+
+
+div.main
+{align-items: center;
+width:500px;
+margin: 50px auto 100px auto;
+color:black;
+border-radius:10px;
+color: gray;
+/* border: 1px solid gray; */
+box-shadow:1px 1px 4px;
+
+} 
+
+
+h1
+{
+  padding: 10px;
+font-family: sans-serif;
+color:black;
+} 
+/* div.register
+{
+background-color:white;
+width: 100%;
+font-size:18px;
+border-radius:10px;
+/* border:1px solid rgba(113, 189, 252, 0.507); */
+/* box-shadow:2px 2px 15px
+rgba(0,0,0,0.3);
+color:rgb(237, 244, 248);
+} */
+
+/* form#register{
+margin: 40px;
+} */
+label
+{
+font-family:sans-serif;
+color:black;
+
+}
+input#name
+{
+/* margin-left:40px; */
+width:300px;
+border:1px solid #ddd;
+border-radius:3px;
+outline: 0;
+padding:7px;
+background-color:white;
+box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+#male{
+	color:black;
+}
+#female{
+	color:black;
+}
+
+label,span,h1
+{
+ text-shadow:1px 1px 5px rgba(0,0,0,0.3); 
+}
+
+select{
+width:300px;
+border:1px solid #ddd;
+border-radius:3px;
+outline: 0;
+padding:7px;
+color:blue;
+background-color:white;
+box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+}
+.submit{
+    margin-left: 60px;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+   
