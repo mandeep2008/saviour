@@ -10,7 +10,7 @@ body{
   overflow-y: none;
 }
 .add-Executive{
-  border: 2px solid white;
+  /* border: 2px solid wh; */
 }
 .nav .assign, .active {
   color: rgb(255, 10, 10) ; 
@@ -20,7 +20,7 @@ body{
 .exe{
   margin-top: 5px;
   margin-left: 120px;
-  color:  white;
+  color:  black;
 }
 .input-type{
   
@@ -32,7 +32,7 @@ body{
 h5{
   margin-top: 20px;
   margin-left: 150px;
-  color: white;
+  color: black;
 }
 .dt{
   margin-left: 150px;
@@ -40,14 +40,23 @@ h5{
 }
 .btn-1, .btn-2{
   margin-top: 25px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 20px;
   background-color: rgb(24, 24, 24);
+ padding: 5px;
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 15   px;
   color: white;
 }
 .btn-1{
-  margin-left: 170px;
+    width: 200px;
+  margin-left: 120px;
+  margin-bottom: 20px;
+
 }
 .btn-2{
-  margin-left: 20px;
+    width: 100px;
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
