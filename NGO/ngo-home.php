@@ -30,7 +30,7 @@
             </div>
             <div class="col-md-6 nav align-self-center">
                     <a class="home" href="../HOME/home.php">HOME</a>
-                    <a class="donation" href="donation-list.php">DONATION LIST</a>
+                    <a class="donation" href="Donated-medicines.php">DONATION LIST</a>
                     <a class="assign" href="assign-executive-page.php">ASSIGN EXECUTIVE</a>
                     <a href="ngo-home.php?logout=true">LOGOUT</a>
             </div>
