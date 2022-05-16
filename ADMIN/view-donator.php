@@ -30,20 +30,31 @@
           <th>Donator's Name</th>
           <th>Donator's Email-id</th>
           <th>Gender</th>
+          <th>Address</th>
           <th>Age</th>
           <th>Mobile No.</th>
-          <th>Address</th>
         
         </tr>
-        <tr>
-          <td>44</td>
-          <td>abc</td>
-          <td>abc@gmail.com</td>
-          <td>wara bhaika, fraidkot</td>
-          <td>crocin</td>
-          <td>cro123</td>
-          <td>50</td>
-        </tr>
+        <?php
+          include 'connection.php';
+
+          $conn = dbConnect();
+          $query = "SELECT DISTINCT USERS.USER_ID,USERS.FNAME,USERS.LNAME,USERS.EMAIL,donations.GENDER,donations.ADDRESS,donations.AGE,donations.CONTACT FROM USERS JOIN donations WHERE users.USER_ID = donations.USER_ID;";
+
+          $result = mysqli_query($conn,$query);
+          foreach($result as $entry){
+            
+            echo "<tr>
+            <td>$entry[USER_ID]</td>
+            <td>$entry[FNAME] $entry[LNAME]</td>
+            <td>$entry[EMAIL]</td>
+            <td>$entry[GENDER]</td>
+            <td>$entry[ADDRESS]</td>
+            <td>$entry[AGE]</td>
+            <td>$entry[CONTACT]</td>
+            </tr>";
+        }
+        ?>
       </table>
 
       <div class="row F justify-content-center">

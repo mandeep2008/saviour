@@ -153,7 +153,7 @@ h3{
 
         <!-- welcome -->
            <div class="col-md-8 welcome  ">
-               <h2> THANKYOU </h2>
+               <h2> THANK YOU </h2>
                <h3> GIVING IS NOT JUST ABOUT MAKE A DONATION,</h3>
                    <h3> IT'S ABOUT MAKING A DIFFERENCE....</h3>
             </div>
