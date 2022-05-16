@@ -1,9 +1,11 @@
+
 h1{
     margin: 50px 0px 0px 20px;
     text-align: center;
-
 }
-
+.c{
+  padding: 0;
+}
 table {
     border: 2px solid black;
   border-radius: 10px;

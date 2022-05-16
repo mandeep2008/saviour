@@ -19,8 +19,8 @@
           <a class="home" href="HOME/home.php">HOME</a>
           <a class="add-ngo" href="">ADD NGO</a>
           <a class="add-executive" href="add-executive.html">ADD EXECUTIVE</a>
-          <a class="donator" href="view-donator.html">VIEW DONATOR DETAILS</a>
-          <a class="ngo" href="view-ngo.html">VIEW NGO DETAILS</a>
+          <a class="donator" href="view-donator.php">VIEW DONATOR DETAILS</a>
+          <a class="ngo" href="view-ngo.php">VIEW NGO DETAILS</a>
           <a href="">LOGOUT</a>
         </div>
     </div>
@@ -33,14 +33,24 @@
             <th>Contact No.</th>
             
         </tr>
-        <tr>
-          <td>44</td>
-          <td>abc</td>
-          <td>abc@gmail.com</td>
-          <td>wara bhaika, fraidkot</td>
-          <td>9877285035</td>
-        
-        </tr>
+        <?php
+          include 'connection.php';
+
+          $conn = dbConnect();
+          $query = "SELECT * FROM ngo;";
+
+          $result = mysqli_query($conn,$query);
+          foreach($result as $entry){
+            
+            echo "<tr>
+            <td>$entry[ngoId]</td>
+            <td>$entry[ngoname]</td>
+            <td>$entry[mail]</td>
+            <td>$entry[address]</td>
+            <td>$entry[contact]</td>
+            </tr>";
+        }
+        ?>
       </table>
 
       <div class="row F justify-content-center">

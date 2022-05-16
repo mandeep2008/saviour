@@ -1,4 +1,11 @@
-
+.con{
+  border-radius:0.75rem;
+  margin-top:20vh;
+  padding:20px;
+  width:55vw;
+  /* background-color: pink; */
+}
+/* 
 .nav .donate, .active {
   color: rgb(255, 10, 10) ; 
   
@@ -22,7 +29,7 @@ div.main {
 
   to {
     margin-left: 30%;
-    /* width: 100%; */
+    /* width: 100%;
   }
 }
 
@@ -34,7 +41,7 @@ margin: 50px auto 100px auto;
 color:black;
 border-radius:10px;
 color: gray;
-/* border: 1px solid gray; */
+/* border: 1px solid gray;
 box-shadow:1px 1px 4px;
 
 } 
@@ -61,16 +68,16 @@ color:rgb(237, 244, 248);
 /* form#register{
 margin: 40px;
 } */
-label
+/* label
 {
 font-family:sans-serif;
 color:black;
 
 }
-input#name
-{
+input#name */
+/* { */
 /* margin-left:40px; */
-width:300px;
+/* width:300px;
 border:1px solid #ddd;
 border-radius:3px;
 outline: 0;
@@ -111,5 +118,5 @@ box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
     width: 150px;
     border: 1px solid black;
     border-radius: 8px;
-}
-   
+} */
+ 
