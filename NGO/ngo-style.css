@@ -1,3 +1,20 @@
+/* body{
+    background-image: url(bg13.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    /* background-color: lightblue;
+ } */
+
+
+
+.layout{
+  /* background-color:rgb(41, 38, 38,0.5) ; */
+}
+.content-body{
+  /* background-color: rgb(186, 207, 206); */
+}
 .web-name{
     /* color: white; */
     color: black;
@@ -28,6 +45,7 @@
    text-align: center;
    font-size: 17px;
    font-weight: bold;
+   margin-top: 25px;
    
  }
  .nav a:hover {
@@ -48,6 +66,8 @@
   margin: 0;
   /* background-color: rgba(41, 3, 3, 0.5) ; */
  background-color: rgb(228, 228, 228);
+ position:absolute;
+ width: 100%;
  }
  .first-col{
    padding: 5px 10px 5px 80px;
@@ -69,6 +89,6 @@
  .feedback{
    padding:10px ;
    text-align: center;
-   /* border: 2px solid black; */
+
  }
  

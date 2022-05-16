@@ -44,3 +44,8 @@ table {
   /* tr:nth-child(even) {
     background-color: #dddddd;
   } */
+
+  .nav .my-donation, .active {
+    color: rgb(255, 10, 10) ; 
+    
+  }

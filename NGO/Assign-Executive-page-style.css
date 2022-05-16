@@ -1,3 +1,7 @@
+.nav .assign , .active {
+  color: rgb(255, 10, 10) ; 
+  
+}
 
 table {
     border: 2px solid black;

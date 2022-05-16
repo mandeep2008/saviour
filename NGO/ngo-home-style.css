@@ -1,4 +1,8 @@
 
+  .nav .home , .active {
+    color: rgb(255, 10, 10) ; 
+    
+  }
   /* body  */
   .big{
     font-size: 80px;
@@ -17,7 +21,8 @@
 
 }
 .together{
-color: white;
+/* color: white; */
+color: black;
  font-size: 30px;
  font-family: cursive;  
 }
