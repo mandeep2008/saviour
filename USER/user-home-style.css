@@ -1,0 +1,9 @@
+.user-detail{
+    width: 50%;
+    margin: 30px auto 320px auto;
+    border: 1px solid black;
+}
+.nav .home, .active {
+    color: rgb(255, 10, 10) ; 
+    
+  }

@@ -1,46 +1,10 @@
-body{
-    background-color: black;
+
+  .nav .home , .active {
+    color: rgb(255, 10, 10) ; 
     
-}
-.web-name{
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    font-style: italic;
-    margin-left: 25px;
+  }
   
-  }
- .web{
-    color: rgb(255, 10, 10);
-      font-size: 80px;
-      font-weight: bold;
-    font-family: 'cursive';
-    text-align: center;
- }
- 
- .nav a{
-   padding-left: 25px;
-  text-decoration: none;
-    color: white;
-
-  }
- .nav {
-   display: inline-block;
-   color: white;
-   text-align: center;
-   font-size: 17px;
-   font-weight: bold;
-   padding-top: 20px;
-   padding-left: 70px;
-
- }
- .nav a:hover {
-    color: rgb(255, 10, 10);
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-  }
-   
+  
   /* body  */
   .box-col{
     background: rgba(0, 0,0, 0.9);
@@ -88,31 +52,3 @@ body{
 
 
 
-/* footer   */
-.F{
-  padding: 4px;
-  margin-top: 120px;
- background-color: rgb(228, 228, 228);
- }
- .first-col{
-   padding: 15px 15px 15px 80px;
-   font-size: 20px;
- }
- 
- .med{
-   margin: 10px;
-   font-size: 15px;
-   /* text-align: ce; */
- }
- .contact{
-   padding: 10px;
- }
- 
- .register{
-   margin-left: 100px;
- }
- .feedback{
-   padding:10px ;
-   text-align: center;
-   /* border: 2px solid black; */
- }
