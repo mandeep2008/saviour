@@ -7,7 +7,7 @@
     <title>Admin Login</title>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="forgot_pswd_style.css">
-</head>
+</head> 
 <body> 
     <div class="container-fluid">
         <div class="row  align-items-center ">
