@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -16,7 +16,7 @@
             <p class="web-name"><b class="web">$</b>aviour</p>
         </div>
         <div class="col-md-6 nav align-self-center">
-                <a class="home" href="HOME/home.php">HOME</a>
+                <a class="home" href="../HOME/home.php">HOME</a>
                 <a class="donation" href="donation-list.php">DONATION LIST</a>
                 <a class="assign" href="Assign-Executive-page-style.php">ASSIGN EXECUTIVE</a>
                 <a href="">LOGOUT</a>
@@ -29,50 +29,40 @@
           <th>Email-id</th>
           <th>Medicine Brand Name</th>
           <th>Medicine Generic Name</th>
-          <th>Quantity</th>
           <th>Expiry Date</th>
           <th>Medicine Type</th>
           <th>Donation Type</th>
-          <th>Receiver's Email</th>
+          <th>Receiver's Name</th>
         </tr>
-        <tr>
-          <td>44</td>
-          <td>abc</td>
-          <td>abc@gmail.com</td>
-          <td>crocin</td>
-          <td>cro123</td>
-          <td>50</td>
-          <td>10-2023</td>
-          <td>Tablet</td>
-          <td>NGO</td>
-          <td>ngo@gmail.com</td>
+        <?php
+            include 'dbconn.php';
+            $conn = dbConnect();
+
+            session_start();
+            $user_id = $_SESSION['userId'];
+            $query = "SELECT * FROM DONATIONS WHERE USER_ID = $user_id";
+
+            $result = mysqli_query($conn,$query);
+
+            foreach($result as $entry){
+                // echo "$entry[]";
+                $ngo_query = "SELECT ngoname FROM NGO WHERE ngoId = $entry[NGO]";
+                $ngo_result = mysqli_query($conn,$ngo_query);
+                $ngo_name = $ngo_result->fetch_array()['ngoname'];
+                echo "<tr>
+                <td>$entry[ID]</td>
+                <td>$entry[FNAME]</td>
+                <td>$entry[EMAIL]</td>
+                <td>$entry[BRAND]</td>
+                <td>$entry[MEDICINE]</td>
+                <td>$entry[EXPIRY]</td>
+                <td>$entry[MANUFACTURING_DATE]</td>
+                <td>NGO</td>
+                <td>$ngo_name</td>
+                </tr>";
+            }
+        ?>
         
-        </tr>
-        <tr>
-          <td>44</td>
-          <td>abc</td>
-          <td>abc@gmail.com</td>
-          <td>crocin</td>
-          <td>cro123</td>
-          <td>50</td>
-          <td>10-2023</td>
-          <td>Tablet</td>
-          <td>NGO</td>
-          <td>ngo@gmail.com</td>
-          </tr>
-          <tr>
-            <td>44</td>
-          <td>abc</td>
-          <td>abc@gmail.com</td>
-          <td>crocin</td>
-          <td>cro123</td>
-          <td>50</td>
-          <td>10-2023</td>
-          <td>Tablet</td>
-          <td>NGO</td>
-          <td>ngo@gmail.com</td>
-          
-          </tr>
       </table>
 
       <div class="row F justify-content-center">

@@ -1,3 +1,16 @@
+<?php
+    if(session_status()!=2){
+      session_start();
+    }
+    function myFunction(){
+      $_SESSION['ngoId']=NULL;
+      $_SESSION['ngoStatus'] = 'logged_out';
+      header('location:../HOME/home.php');
+    }
+    if(isset($_GET['logout'])){
+      myFunction();
+    }
+  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +29,10 @@
                 <p class="web-name"><b class="web">$</b>aviour</p>
             </div>
             <div class="col-md-6 nav align-self-center">
-                    <a class="home" href="HOME/home.php">HOME</a>
-                    <a class="donation" href="donation-list.php">DONATION LIST</a>
-                    <a class="assign" href="assign-executive.php">ASSIGN EXECUTIVE</a>
-                    <a href="">LOGOUT</a>
+                    <a class="home" href="../HOME/home.php">HOME</a>
+                    <a class="donation" href="Donated-medicines.php">DONATION LIST</a>
+                    <a class="assign" href="assign-executive-page.php">ASSIGN EXECUTIVE</a>
+                    <a href="ngo-home.php?logout=true">LOGOUT</a>
             </div>
         </div>
 

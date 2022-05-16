@@ -7,16 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="ngo-style.css">
-    <link rel="stylesheet" href="Donated-Medicine-style.css">
+    <link rel="stylesheet" href="./Donated-Medicine-style.css">
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid c">
     <div class="row layout">
         <div class="col-md-6 logo">
             <p class="web-name"><b class="web">$</b>aviour</p>
         </div>
         <div class="col-md-6 nav align-self-center">
-                <a class="home" href="HOME/home.php">HOME</a>
+                <a class="home" href="../HOME/home.php">HOME</a>
                 <a class="donation" href="donation-list.php">DONATION LIST</a>
                 <a class="assign" href="Assign-Executive-page-style.php">ASSIGN EXECUTIVE</a>
                 <a href="">LOGOUT</a>
@@ -28,57 +28,44 @@
           <th>ID</th>
           <th>Donator's Name</th>
           <th>Donator's Email-id</th>
+          <th>Donator's Contact no</th>
           <th>Donator's Address</th>
           <th>Medicine Brand Name</th>
           <th>Medicine Generic Name</th>
-          <th>Quantity</th>
+          
           <th>Expiry Date</th>
-          <th>Medicine Type</th>
-          <th>Donation Type</th>
-          <th>NGO(Your) Email-id</th>
+          <th>Manufacturing date</th>
+          
         </tr>
-        <tr>
-          <td>44</td>
-          <td>abc</td>
-          <td>abc@gmail.com</td>
-          <td>wara bhaika, fraidkot</td>
-          <td>crocin</td>
-          <td>cro123</td>
-          <td>50</td>
-          <td>10-2023</td>
-          <td>Tablet</td>
-          <td>NGO</td>
-          <td>ngo@gmail.com</td>
+        <?php
+            include 'connection.php';
+            $conn = dbConnect();
+
+            session_start();
+            $ngo_id = $_SESSION['ngoId'];
+            $query = "SELECT * FROM DONATIONS WHERE NGO = $ngo_id";
+
+            $result = mysqli_query($conn,$query);
+
+            foreach($result as $entry){
+                // echo "$entry[]";
+                
+                echo "<tr>
+                <td>$entry[ID]</td>
+                <td>$entry[FNAME]</td>
+                <td>$entry[EMAIL]</td>
+                <td>$entry[CONTACT]</td>
+                <td>$entry[ADDRESS]</td>
+                <td>$entry[BRAND]</td>
+                <td>$entry[MEDICINE]</td>
+                <td>$entry[EXPIRY]</td>
+                <td>$entry[MANUFACTURING_DATE]</td>
+                
+                
+                </tr>";
+            }
+        ?>
         
-        </tr>
-        <tr>
-            <td>44</td>
-            <td>abc</td>
-            <td>abc@gmail.com</td>
-            <td>wara bhaika, fraidkot</td>
-            <td>crocin</td>
-            <td>cro123</td>
-            <td>50</td>
-            <td>10-2023</td>
-            <td>Tablet</td>
-            <td>NGO</td>
-            <td>ngo@gmail.com</td>
-          
-          </tr>
-          <tr>
-            <td>44</td>
-            <td>abc</td>
-            <td>abc@gmail.com</td>
-            <td>wara bhaika, fraidkot</td>
-            <td>crocin</td>
-            <td>cro123</td>
-            <td>50</td>
-            <td>10-2023</td>
-            <td>Tablet</td>
-            <td>NGO</td>
-            <td>ngo@gmail.com</td>
-          
-          </tr>
       </table>
 
       <div class="row F justify-content-center">
@@ -87,12 +74,12 @@
 <a href="">Feedback</a>
          </pre>
         </div>
-        <div class="col-md-5 feedback">
+        <div class="col-md-4 feedback">
           <p class="register">NGO can register by <a href="ngo-signup.php">clicking here</a></p>
           <p class="register">User can register by <a href="user-signup.php">clicking here</a></p>
         </div>
        
-        <div class="col-md-4 contact"> 
+        <div class="col-md-3 contact"> 
          
           <pre class="register">Email:<a href="mailto:Saviour1234@gmail.com?Subject: "> Saviour1234@gamil.com</a></pre> -->
         </div>

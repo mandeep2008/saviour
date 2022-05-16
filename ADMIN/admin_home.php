@@ -21,7 +21,7 @@
               <a class="home" href="HOME/home.php">HOME</a>
               <a class="add-ngo" href="">ADD NGO</a>
               <a class="add-executive" href="add-executive.html">ADD EXECUTIVE</a>
-              <a class="donator" href="view-donator.html">VIEW DONATOR DETAILS</a>
+              <a class="donator" href="view-donator.php">VIEW DONATOR DETAILS</a>
               <a class="ngo" href="view-ngo.html">VIEW NGO DETAILS</a>
               <a href="">LOGOUT</a>
             </div>

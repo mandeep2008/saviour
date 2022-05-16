@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel = 'script' href='./req-script.js'/>
     <link rel="stylesheet" href="request.css">
 </head>
 <body>
+
    <div class="main">
        <div class="register">
         <h1>Request Form</h1>
-        <form action="" id="register" method="post">
+        <div>
+        <!-- <form action="" id="register" method="post"> -->
             <label>Name:</label>
            <input type="text" id="name" placeholder="Enter your name">
            <br><br>
@@ -59,7 +62,7 @@
                <button id="Submit">Submit</button>
                <button id="reset">Clear</button>
            </div>
-        </form>
+        </div>
        </div><!--end register-->
    </div><!--end main-->
 </body>

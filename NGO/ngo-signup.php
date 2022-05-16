@@ -94,7 +94,7 @@
                      </div>
                     <div>
                         <label for="username"class="em">Username:</label>
-                        <input type="text" id="email" name="username" placeholder="Enter username to Create an account">
+                        <input type="text" id="username" name="username" placeholder="Enter username to Create an account">
                    </div>
                      <div class="col-md-6 left ">
                         <label for="pswd"class="txt">Password:</label>
@@ -102,7 +102,7 @@
                      </div>
                      <div class="col-md-6 right">
                         <label for="confirm-password"class="txt">confirm password</label>
-                        <input type="password" id="cn" name="confirm-password" placeholder="Re-enter password">    
+                        <input type="password" id="conpswd" name="confirm-password" placeholder="Re-enter password">    
                      </div>
                    
                      

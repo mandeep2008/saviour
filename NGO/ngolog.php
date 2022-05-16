@@ -30,7 +30,7 @@ if(empty($_POST['password']))
         <div class="row  align-items-center ">
             <div class="col-md-4 m-auto pt-4 loginborder">
                 <h3 class="content">NGO Login</h3>
-                <form action="" method="POST" auto_complete="off">
+                <form action="ngo-login.php" method="POST" auto_complete="off">
                     <div class="detailes">
                         <input type="text" name="username" class="input-box" placeholder=" Enter Username">
                         <span><?php if(isset($username_error)) echo $username_error; ?></span>
@@ -39,7 +39,7 @@ if(empty($_POST['password']))
                         <input type="password" name="password" class="input-box" placeholder=" Enter Password">
                         <span><?php if(isset($password_error)) echo $password_error; ?></span>
                     </div>
-                    <button class="btn" ><a href="ngo-home.php">Login</a></button>
+                    <button class="btn" >Login</button>
                    <p class="forget"> <a href="forgot_pswd.html">Forgot Password? </a></p>
                                       
                     <p class="account">
