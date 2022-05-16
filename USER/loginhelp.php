@@ -21,7 +21,6 @@
                 session_start();
             $_SESSION['userId'] = $user_id;
             $_SESSION['status'] = 'logged_in';
-            echo $_SESSION['status'];
             header('location:user-login-successful.php');
             exit;
             // echo "<h1><center> Login successful </center></h1>";  

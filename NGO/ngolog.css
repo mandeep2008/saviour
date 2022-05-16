@@ -1,4 +1,27 @@
 body{
+    overflow-y: hidden;
+    height: 100vh;
+}
+.login{
+    width:45vw;
+    height: 92vh;
+}
+.image{
+    width:55vw;
+    background-color: aqua;
+}
+.wrapper{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:3rem;
+}
+.new-user{
+    font-weight: 300;
+    margin-top:20px;
+    font-size: 1.2rem;
+}
+/* body{
     /* background-image: url(bg5.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -6,7 +29,7 @@ body{
     background-position: center;
      */
      /* background-color: lightcoral; */
-}
+/* }
 
 .row{
     height: 620px;
@@ -14,11 +37,11 @@ body{
 }
 .loginborder{
     border: 1px solid black;
-    text-align: center;
+    text-align: center; */
     /* background-color:rgba(0,0,0,0.5); */
     /* background-color: white; */
 
-    border-radius:10px;
+    /* border-radius:10px;
     
     margin-right:100px;
     height: 500px;
@@ -52,13 +75,13 @@ body{
     box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
     
 }
-a{
+a{ */
  /* color: black; */
-}
-p{
+/* }
+p{ */
     /* font-weight: bold; */
     /* color: black; */
-}
+/* }
 .forget{
     margin-top: 15px;
-}
+} */ 
