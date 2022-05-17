@@ -29,9 +29,6 @@
 				<a class="nav-link" href="../Home/home.php">ADMIN <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="../Home/about-us.php">ADD NGO </a>
-			</li>
-			<li class="nav-item">
 				<a class="nav-link" href="add-executive.php">ADD EXECUTIVE</a>
 			</li>
 			<li class="nav-item">
@@ -47,24 +44,34 @@
 		</div>
 	</nav>
 	<div class='d-flex justify-content-around'>
-    <div class='image d-flex flex-column justify-content-around'>
+    <!-- <div class='image d-flex flex-column justify-content-around'>
       <div class='card trivia'>
         <p class='text-center number'>1</p>
         <h3 class='lead'>Pending NGO Approvals</h3>
       </div>
-    </div>
+    </div> -->
 		<div class='login'>
 			<div class='wrapper card con'>
 				<form method='POST' action='loginhelp.php'>
-            <div class='form-group'>
+          <?php
+            include 'connection.php';
+            $conn = dbConnect();
+            
+            $query = "SELECT * FROM ADMIN WHERE ADMIN_ID = 1";
+
+            $result = mysqli_query($conn,$query);
+
+            $array = $result->fetch_array();
+          
+            echo"<div class='form-group'>
                     <div class='d-flex justify-content-between mt-10'>
                         <div class='hf'>
                             <label>First NAME</label>
-                            <input type="text" class="form-control" name="first_name" placeholder="Enter NGO Name" required>
+                            <input type='text' class='form-control' name='first_name' value='$array[FNAME]' placeholder='Enter First Name' required>
                         </div>
                         <div class='hf'>
                             <label>Last Name</label>
-                            <input type="tel" class="form-control" name="last_name" placeholder="Enter Contact Number" required>
+                            <input type='text' class='form-control' name='last_name' value='$array[LNAME]' placeholder='Enter Last name' required>
                         </div>
                     </div>
             </div>
@@ -72,7 +79,7 @@
 
               <div class='f'>
                 <label>Email</label>
-                <input type="tel" class="form-control" name="last_name" placeholder="Enter Contact Number" required>
+                <input type='email' class='form-control' name='email' value='$array[EMAIL]' placeholder='Enter Email address' required>
                         
               </div>
             </div>
@@ -80,18 +87,19 @@
             <div class='f'>
                       <div>
                         <label>Address</label>
-                        <textarea name="address" class='form-control' id="" cols="50" rows="5"></textarea>
+                        <textarea name='address' class='form-control' cols='50' rows='5'>$array[ADDRESS]</textarea>
                     </div>
                 </div>
             </div>
             <div class='form-group'>
             <label>Contact Number</label>
-                <input type="tel" class="form-control" name="last_name" placeholder="Enter Contact Number" required>
+                <input type='tel' class='form-control' name='contact' value='$array[CONTACT]' placeholder='Enter Contact Number' required>
             </div>
             <div class='d-flex justify-content-around'>
               <button type='submit' class='btn'>Update</button>
               <button type='button' class='btn'>Cancel</button>
-            </div>
+            </div>";
+            ?>
         </form>
 			</div>
 		</div>

@@ -25,13 +25,11 @@
 			<li class="nav-item">
 				<a class="nav-link" href="../Home/home.php">HOME </a>
 			</li>
-      <li class="nav-item active">
+            <li class="nav-item">
 				<a class="nav-link" href="../Home/home.php">ADMIN <span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="../Home/about-us.php">ADD NGO </a>
-			</li>
-			<li class="nav-item">
+			
+			<li class="nav-item active">
 				<a class="nav-link" href="add-executive.php">ADD EXECUTIVE</a>
 			</li>
 			<li class="nav-item">

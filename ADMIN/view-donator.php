@@ -22,14 +22,11 @@
 			<li class="nav-item">
 				<a class="nav-link" href="../Home/home.php">HOME </a>
 			</li>
-			<li class="nav-item ">
-				<a class="nav-link" href="donate.php">ADD NGO</a>
-			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">ADD EXECUTIVE </a>
+				<a class="nav-link" href="add-executive.php">ADD EXECUTIVE </a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="#">VIEW DONATOR'S DETAILS <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="view-donator.php">VIEW DONATOR'S DETAILS <span class="sr-only">(current)</span></a>
 			</li>
       <li class="nav-item">
 				<a class="nav-link" href="view-ngo.php">VIEW NGO DETAILS </a>
@@ -61,6 +58,7 @@
           $query = "SELECT DISTINCT USERS.USER_ID,USERS.FNAME,USERS.LNAME,USERS.EMAIL,donations.GENDER,donations.ADDRESS,donations.AGE,donations.CONTACT FROM USERS JOIN donations WHERE users.USER_ID = donations.USER_ID;";
 
           $result = mysqli_query($conn,$query);
+          
           foreach($result as $entry){
             
             echo "<tr>
