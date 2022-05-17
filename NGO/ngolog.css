@@ -3,12 +3,14 @@ body{
     height: 100vh;
 }
 .login{
-    width:45vw;
+    width:48vw;
     height: 92vh;
 }
 .image{
     width:55vw;
-    background-color: aqua;
+}
+.illus{
+    width:100%;
 }
 .wrapper{
     width:90%;

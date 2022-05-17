@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-<title>Bootstrap Simple Login Form with Blue Background</title>
+<title>User Login</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="user-login.css">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -58,7 +58,9 @@
 			   <p class="text-left new-user">New User?<a href='user-signup.php'>SignUp Here</a></p>
 			</div>
 		</div>
-		<div class='image'></div>
+		<div class='image'>
+			<img class='illus' src='../Assets/donate-charity.jpg'/>
+		</div>
 	</div>
 	<!-- <div class="sidenav">
          <div class="login-main-text">

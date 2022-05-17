@@ -8,7 +8,6 @@ body{
 }
 .image{
     width:55vw;
-    background-color: aqua;
 }
 .wrapper{
     width:90%;
@@ -20,4 +19,11 @@ body{
     font-weight: 300;
     margin-top:20px;
     font-size: 1.2rem;
+}
+.hf{
+    width:48%;
+}
+.illus{
+    width:100%;
+    opacity:0.8;
 }

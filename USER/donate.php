@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html>
+<?php
+    if(session_status()!=2){
+      session_start();
+    }
+    function myFunction(){
+      $_SESSION['userid']=NULL;
+      $_SESSION['status'] = 'logged_out';
+      header('location:../HOME/home.php');
+    }
+    if(isset($_GET['logout'])){
+      myFunction();
+    }
+  ?>
 	<head>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel = 'stylesheet' href='./donate-style.css'/>
@@ -11,19 +24,22 @@
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
 			<ul class="navbar-nav">
 			<li class="nav-item">
-				<a class="nav-link" href="../Home/home.php">Home </a>
+				<a class="nav-link" href="../Home/home.php">HOME </a>
 			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="#">Donate <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="user-login-successful.php">USER </a>
+      </li>
+			<li class="nav-item">
+				<a class="nav-link active" href="#">Donate <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="my-donation.php">My Donation</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Logout</a>
+				<a class="nav-link" href="donate.php?logout=true">Logout</a>
 			</li>
 			</ul>
 		</div>
@@ -40,6 +56,7 @@
 						include 'dbconn.php';
 
 						$conn = dbConnect();
+						if(session_status()!=2)
 						session_start();
 						$userid = $_SESSION['userId'];
 						$query = "SELECT FNAME,LNAME,EMAIL,ADDRESS FROM USERS WHERE USER_ID = $userid";

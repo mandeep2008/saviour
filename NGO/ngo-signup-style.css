@@ -1,89 +1,40 @@
 body{
-    /* background-image: url("login-bg2.jpeg"); */
-    background-position: center;
-    /* background-attachment: fixed; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100px;
-    /* width: 100%; */
+    background-color:#f9f9f9;
+    overflow-x: hidden;
+  }
+  .con{
+    border-radius:0.75rem;
+    padding:20px;
+    /* background-color: pink; */
+    animation-duration: 1s;
+    animation-name: fadeInRight;
+  }
+  .wrapper{
+    width:55vw;
+    margin-top:4rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .heading{
+    margin-left:3vw;
+    width:fit-content;
+  }
+  @keyframes fadeInRight{
+    0% {
+      opacity: 0;
+      transform: translateX(20vw);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+  }
+  .hf{
+    width:48%;
+    margin-top:16px;
 }
-.container-fluid{
-    /* margin: 100px 0px 100px 0px; */
-}
-
-
-h1{
-    color: black;
-    font-weight: bold;
-    text-align: center;
-
-}
-h5{
-    display: block;
-}
-
-#signup{
-   /* margin: 20px; */
-    color: black;
-
-}
-h5{
-    border-bottom: 2px solid black;
-}
-
-.form-body{
-    /* border: 2px solid green; */
-    margin: 12px;
-}
-.horizontal-group{
-    margin: 15px 0px 0px 0px;
-}
-.txt{
-    margin: 15px 0px 0px 0px ;
-}
-.em{
-    margin:2px 0px 0px 16px;
-}
-.file{
-    margin-left: 15px;
-}
-.Certificate{
-    margin-left: 30px;
-}
-.financial{
-    margin-left: 42px;
-}
-#email{
-    width: 591px;
-    margin:0px 0px 0px 16px;
-    display: block;
-    
-}
-.BTN{
-    margin: 15px auto 5px auto;
-    width: 200px;
-    
-    
-
-}
-.signup{
-    border: 1px solid black;
-    border-radius:10px;
-    /* margin-right:100px; */
-    /* height: 500px; */
-    font-family: sans-serif;
-    box-shadow: 2px 2px 15px;
-    /* background-color: rgb(3, 3, 3,0.5); */
-}
-input{
-    width: 280px;
-}
-textarea{
-    width: 596px;
-    height: 50px;
-}
-.button{
-    background-color: black;
-    color: white;
-    border-radius: 8px;
+.f{
+    width:100%;
+    margin-top:10px;
+    margin-bottom:10px;
 }

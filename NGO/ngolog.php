@@ -42,7 +42,7 @@ if(empty($_POST['password']))
 				<a class="nav-link" href="../Home/home.php">HOME </a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="../Home/about-us.php">NGO ABOUT US </a>
+				<a class="nav-link" href="../Home/about-us.php">ABOUT US </a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="../Admin/admin-log.php">ADMIN</a>
@@ -58,7 +58,9 @@ if(empty($_POST['password']))
 	</nav>
 	<div class='d-flex justify-content-between'>
 		
-		<div class='image'></div>
+		<div class='image'>
+            <img class='illus' src='https://www.netspaceindia.com/wp-content/uploads/2021/06/NGO.png.webp'/>
+        </div>
         <div class='login'>
 			<div class='wrapper'>
 				<h1 class='text-right'>Welcome Back</h1>
@@ -74,7 +76,7 @@ if(empty($_POST['password']))
                   </div>
 					<button type="submit" class="btn button">Login</button>
                </form>
-			   <p class="text-left new-user">New User?<a href='user-signup.php'>SignUp Here</a></p>
+			   <p class="text-left new-user">New User?<a href='ngo-signup.php'>SignUp Here</a></p>
 			</div>
 		</div>
 	</div>

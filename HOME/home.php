@@ -69,7 +69,7 @@
         </div>
 
         <!-- footer  -->
-        <div class="row F justify-content-center">
+        <!-- <div class="row F justify-content-center">
           <div class="col-md-3 first-col">
            <pre><a href="faq.php">FAQ</a>        
             <a href="">Feedback</a>
@@ -85,7 +85,7 @@
             <pre class="register">Email:<a href="mailto:Saviour1234@gmail.com?Subject: "> Saviour1234@gamil.com</a></pre>
           </div>
        
-        </div>
+        </div> -->
      </div>
 </body>
 </html>
