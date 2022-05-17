@@ -40,34 +40,26 @@
                     <div class='d-flex justify-content-between mt-10'>
                         <div class='hf'>
                             <label>NGO NAME</label>
-                            <input type="text" class="form-control" name="first_name" placeholder="Enter NGO Name" required>
+                            <input type="text" class="form-control" name="ngo-name" placeholder="Enter NGO Name" required>
                         </div>
                         <div class='hf'>
                             <label>CONTACT NUMBER</label>
-                            <input type="tel" class="form-control" name="last_name" placeholder="Enter Contact Number" required>
+                            <input type="tel" class="form-control" name="contact" placeholder="Enter Contact Number" required>
                         </div>
                     </div>
                     <div class='d-flex justify-content-between'>
                         <div class='hf'>
                             <label>Year Of Establishment</label>
-                            <input type="Number" min='1960' max='2022' class="form-control" name="first_name" placeholder="Enter NGO Name" required>
+                            <input type="Number" min='1960' max='2022' class="form-control" name="yoe" placeholder="Enter year of Establishment" required>
                         </div>
                         <div class='hf'>
                             <label>Name Of Authorative Member</label>
-                            <input type="tel" class="form-control" name="last_name" placeholder="Enter Contact Number" required>
+                            <input type="tel" class="form-control" name="noam" placeholder="Enter Contact Number" required>
                         </div>
                     </div>
                     <div class='f'>
                         <label>Address</label>
                         <textarea name="address" class='form-control' id="" cols="50" rows="5"></textarea>
-                    </div>
-                    <div>
-                        <label for="registration_certificate" class="txt file">*Add Registration Certificate of the NGO:</label>
-                        <input type="file" class="Certificate" id="myFile" name="filename">
-                    </div>
-                    <div>
-                        <label for="finance" class="txt file">*Add Financial Statements of the NGO:</label>
-                        <input type="file" class="financial" id="myFile" name="filename">
                     </div>
                 </div>
                 <h5>Representative Details</h5>
@@ -76,21 +68,21 @@
                     <div class='d-flex justify-content-between'>
                         <div class='hf'>
                             <label>First NAME</label>
-                            <input type="text" class="form-control" name="first_name" placeholder="Enter NGO Name" required>
+                            <input type="text" class="form-control" name="fname" placeholder="Enter First Name" required>
                         </div>
                         <div class='hf'>
-                            <label>Last NUMBER</label>
-                            <input type="text" class="form-control" name="last_name" placeholder="Enter Contact Number" required>
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" name="lname" placeholder="Enter Last Name" required>
                         </div>
                     </div>
                     <div class='d-flex justify-content-between'>
                         <div class='hf'>
                             <label>Contact Number</label>
-                            <input type="tel" min='1960' max='2022' class="form-control" name="first_name" placeholder="Enter NGO Name" required>
+                            <input type="tel" class="form-control" name="ph-number" placeholder="Enter Contact Number" required>
                         </div>
                         <div class='hf'>
                             <label>Email</label>
-                            <input type="email" class="form-control" name="last_name" placeholder="Enter Contact Number" required>
+                            <input type="email" class="form-control" name="mail" placeholder="Enter email address" required>
                         </div>
                     </div>
                 </div>
@@ -99,20 +91,21 @@
                 <div class='form-group'>
                     <div class='d-flex flex-column justify-content-between'>
                             <label>Username</label>
-                            <input type="text" class="form-control" name="first_name" placeholder="Enter NGO Name" required>
+                            <input type="text" class="form-control" name="username" placeholder="Enter User Name" required>
                         
                     </div>
                     <div class='d-flex justify-content-between'>
                         <div class='hf'>
                             <label>Password</label>
-                            <input type="Number" min='1960' max='2022' class="form-control" name="first_name" placeholder="Enter NGO Name" required>
+                            <input type="password"class="form-control" name="password" placeholder="Enter Password" required>
                         </div>
                         <div class='hf'>
                             <label>Confirm Password</label>
-                            <input type="tel" class="form-control" name="last_name" placeholder="Enter Contact Number" required>
+                            <input type="password" class="form-control" name="confirm-password" placeholder="Re-Enter Password" required>
                         </div>
                     </div>
                 </div>
+                <button class='btn'>Register</button>
             </form>
         </div>
     </div>

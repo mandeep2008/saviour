@@ -99,13 +99,13 @@
 									</div>
 								</div>";
 								echo "<div class='form-group'>
-									<select class='form-select' name='ngo' required>
-										<option selected>Select Ngo</option>";
+									<select class='form-control' name='ngo' required>
+										<option name='ngo' selected>Select Ngo</option>";
 										$ngo_query = "SELECT ngoname,ngoId from ngo ORDER BY ngoname";
 										$ngo_result = mysqli_query($conn,$ngo_query);
 
 										foreach($ngo_result as $ngo){
-											echo"<option value='$ngo[ngoId]'>$ngo[ngoname]</option>";
+											echo"<option name='ngo' value='$ngo[ngoId]'>$ngo[ngoname]</option>";
 										}
 								echo"	</select>
 								</div>";
